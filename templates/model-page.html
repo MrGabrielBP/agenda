@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include "model-header.html" %}
+    <!-- Nesse trecho, ele vai incluir o conteúdo do model-header.html -->
+</head>
+<body>
+    {% block content %} {% endblock %}
+    <!-- É um bloco. Todoo código que tiver na agenda ou em  qualquer outra página html, ele vai ser inserido aqui
+         Dessa forma tem reaproveitamento de código pq n precisa ficar reescrevendo código-->
+    {% include "model-footer.html" %}
+    <!-- Nesse trecho, ele vai incluir o conteúdo do model-footer.html -->
+</body>
+</html>

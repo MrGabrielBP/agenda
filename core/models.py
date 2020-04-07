@@ -1,6 +1,5 @@
-from django.db import models
 from django.contrib.auth.models import User
-
+from django.db import models
 # Create your models here.
 
 class Evento(models.Model):
@@ -19,3 +18,6 @@ class Evento(models.Model):
 #sempre que alguem chamar esse objeto, ele automaticamente vai trazer o nome do título
     def __str__(self):
         return self.titulo
+
+    def get_data_evento(self):
+        return self.data_evento.strftime('%d/%m/%Y %H:%M')
